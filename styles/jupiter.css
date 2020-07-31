@@ -1,0 +1,61 @@
+.planet-hero {
+    /* Location of the image */
+   background: url('../assets/fallback_jupiter.jpg') ;
+   
+   /* Background image doesn't tile */
+   background-repeat: no-repeat;
+   
+   /* Background image is centered vertically and horizontally at all times */
+   background-position: center center;
+
+     /* Background image is ffixed-top
+      in the viewport so that it doesn't move when 
+    the content's height is greater than the image's height */
+   background-attachment: fixed;
+   
+   /* This is what makes the background image rescale based
+    on the container's size */
+   background-size: cover;
+   
+   /* width is set to 100% */
+   width: 100%;
+   height: 650px;
+   
+   object-fit: contain;
+   /* height: auto; */
+}
+
+
+
+
+.planet-header-content{
+  color: var(--light-gray);
+  align-items: center;
+  /* background: red; */
+  height: 700px;
+  font-family: 'Heebo', sans-serif;
+}
+
+.planet-parallax {
+    color: var(--light-gray);
+      /* The image used */
+  background-image: url("../assets/jupiter_parallax_two.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+@media screen and (max-width :786px) {
+  .jupiter-header-content {
+      text-align: center;
+  }
+
+}

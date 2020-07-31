@@ -1,0 +1,451 @@
+/* css resets */
+:root {
+    --light-gray : #eeeeee;
+    --gray : #c6c5d3;
+    --black-variant : #222831;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+hr {
+    margin: auto;
+    width: 50%;
+    border-top: 5px dotted var(--black-variant);
+}
+
+.bg-nav {
+    /* background: #3F1B1E ; */
+    background: #282D32;
+    /* transition-duration: 700ms; */
+}
+
+/* tangalin ang kilay */
+.nav-link {
+    background-color: transparent !important;
+  }
+
+
+/* end resets */
+
+
+.navbar-brand{
+    font-weight: bolder;
+}
+
+
+.planet-hero .fixed-top{
+    transition-duration: 700ms;
+  }
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--light-gray);
+}
+
+.navbar-dark .navbar-brand {
+    color:var(--light-gray);
+}
+
+.navbar-dark .navbar-brand:hover {
+    color:var(--light-gray);
+}
+
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--light-gray);
+}
+
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--light-gray);
+    transition: width .5s;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover::after {
+    color: var(--light-gray);
+    width: 100%;
+    /* //transition: width .3s; */
+}
+
+.navbar-shadow {
+    -webkit-box-shadow: 0 24px -6px #222;
+    -moz-box-shadow: 0 24px -6px #222;
+    box-shadow: 0 4px 24px -6px #222;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    
+    /* box-shadow : h-offset(l-r) | v-offset(t-b) | blur | spread */
+}
+
+.planet-header-content {
+    color: var(--light-gray);
+    align-items: center;
+    /* background: red; */
+    height: 500px;
+    font-family: 'Heebo', sans-serif;
+
+}
+
+.pulsating-animation {
+    animation: pulse 1.5s infinite;
+    color: var(--light-gray);
+    border-color: var(--light-gray) ;
+   
+}
+
+.pulsating-animation:hover {
+    color: var(--light-gray);
+}
+
+
+
+
+
+
+@keyframes pulse {
+
+    0% { 
+        transform: scale(.9);
+        box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+    }
+
+    70% {
+      transform:scale(1);
+      box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+    }
+      100% {
+     transform:scale(.9);
+      box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+    }
+}
+
+
+/* @media screen and (max-width :786px) {
+    .navbar-dark .navbar-brand {
+      
+        
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+} */
+
+.planet-detail {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.planet-overview {
+    background:var(--light-gray);
+    padding: 85px;
+    
+   
+}
+
+.planet-indepth {
+    padding-top: 50px;
+    background-color: #fff;
+    color:var(--light-gray);
+    /* background: url('./assets/galaxy-bg.jpg'); */
+}
+
+.planet-starter-text {
+    color: var(--black-variant);
+    /* background: red; */
+    
+}
+
+.left-color-border {
+    border-left: 4px solid var(--black-variant);
+}
+
+
+
+
+.planet-temp {
+    padding-top: 50px;
+    color: var(--black-variant);
+    /* background: red; */
+    padding-bottom: 50px;
+}
+
+
+.planet-size-distance {
+    background: var(--black-variant);
+    padding-top: 50px;
+    padding-bottom: 100px;
+    
+}
+
+.iframe-responsive {
+    /* width: 100%;
+    height: 100%; */
+}
+
+
+.planet-more-details {
+    /* background: red; */
+    padding: 50px;
+    color: var(--black-variant);
+    background: var(--light-gray);
+}
+
+.more-detail-sections{
+    margin: 20px
+}
+
+.kid-section {
+    padding-top: 50px;
+    /* background: red; */
+}
+
+.planet-kid {
+    width: 50%;
+    animation-name: bouncing-planet;
+    animation-duration: 1s;
+    /* position: relative; */
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+footer {
+    /* font-family: 'Heebo', sans-serif; */
+    background: url('../assets/footer_bg.jpg');
+    color: var(--light-gray);
+    padding-top: 50px;
+
+     /* Background image doesn't tile */
+   background-repeat: no-repeat;
+   
+   /* Background image is centered vertically and horizontally at all times */
+   background-position: center center;
+
+     /* Background image is fixed in the viewport so that it doesn't move when 
+    the content's height is greater than the image's height */
+   background-attachment: fixed;
+   
+   /* This is what makes the background image rescale based
+    on the container's size */
+   background-size: cover;
+    
+}
+
+
+.planet-link {
+    color: var(--light-gray);
+    text-decoration: none;
+    
+
+}
+
+
+
+.planet-link:hover {
+    color: var(--light-gray);
+    text-decoration: none;
+   
+}
+
+.planets:hover {
+    animation-name: bouncing-planet;
+    animation-duration: 1s;
+    /* position: relative; */
+    animation-iteration-count: infinite;
+}
+
+@keyframes bouncing-planet {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+
+/* .planet-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--light-gray);
+    transition: width .5s;
+    text-decoration: none;
+}
+
+
+
+.planet-link:hover::after{
+    width: 50%;
+} */
+
+
+
+.footer-lists {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.footer-lists a {
+    color: var(--gray);
+    transition: all .5s;
+}
+
+.footer-lists a:hover {
+    color:var(--light-gray);
+    text-decoration: none;
+}
+
+
+.footer-link-container {
+    margin-top: 100px;
+    /* background: red; */
+}
+
+.list-item-footer {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.item.social > a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.4);
+    margin: 0 8px;
+    color: #fff;
+    opacity: 0.75;
+    
+}
+
+
+
+
+/* .footer-lists a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--light-gray);
+    transition: width .5s;
+}
+
+.footer-lists a:hover::after {
+    color: var(--light-gray);
+    width: 100%;
+    /* //transition: width .3s; 
+} */
+
+.pulsating-animation-footer {
+    animation: pulse 1.5s infinite;
+    color: var(--light-gray);
+    border-color: var(--light-gray) ;
+   
+}
+
+.pulsating-animation-footer:hover {
+    animation: pulse 1.5s infinite;
+    color: var(--light-gray);
+    border-color: var(--light-gray) ;
+   
+}
+
+/* .pulsating-animation-footer:focus{
+    animation: pulse 1.5s infinite;
+    color: var(--light-gray);
+    border-color: var(--light-gray) ;
+}
+
+.pulsating-animation-footer:active {
+    animation: pulse 1.5s infinite;
+    color: var(--light-gray);
+    border-color: var(--light-gray) ;
+} */
+
+.back-top-container{
+    /* background: red; */
+    margin-top: 80px;
+    height: 50px;
+    
+}
+
+
+footer p {
+    color: var(--light-gray);
+}
+
+
+.created-by {
+    /* background: red; */
+    margin-top: 10px;
+    /* height: 400px; */
+}
+
+.created-by p {
+    margin-bottom: 0px;
+}
+
+
+
+
+@media screen and (max-width :786px) {
+    .planet-header-content {
+        text-align: center;
+    }
+
+    .planet-size-distance-text{
+        margin-top: 20px;
+    }
+
+    .kid-friendly-text{
+        /* background: red; */
+        margin-top: 20px;
+        /* margin-bottom: 20px; */
+    }
+
+    .kid-section {
+        margin-bottom: 40px;
+    }
+
+    .light-planet  {
+        color: var(--black-variant);
+    }
+
+    .light-planet .pulsating-animation {
+        color: var(--black-variant);
+        border-color: var(--black-variant);
+    }
+
+    /* .mercury-content h1 {
+        text-align: center;
+    } */
+}
