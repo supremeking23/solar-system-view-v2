@@ -15,6 +15,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
   />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="icon" href="assets/solar_view_logo.png" type="image/png" sizes="16x16">
@@ -185,8 +187,13 @@
                         <a href="uranus.html" data-toggle="popover" data-html="true" 
                         data-content="
                           <strong>Uranus</strong>
-                          <br/>The Sideways Planet
-                          
+                          <br/>
+                          <p>The first planet found with the aid of a telescope, 
+                        Uranus was discovered in 1781 by astronomer William Herschel, although he originally 
+                        thought it was either a comet or a star.
+                        <br />
+                        <em>Click the planet to read more details</em>
+                        </p>
                           ">
                             <img class="img-fluid planets" src="assets/uranus.png" >
                         </a>
@@ -247,11 +254,11 @@
                     </div>
       
                     <div class="row asteroid-comets-and-meteors-row">
-                        <div class="col-4 col-md-4 col-lg-4 ">
+                        <div class="col-12 col-md-6 col-lg-4 col-md-6 mt-md-5 mt-sm-5 mt-5" >
 
     
     
-                            <div class="card" style="width: 18rem;">
+                            <div class="card" >
                                 <img src="assets/asteroid.jpg"class="card-img-top img-fluid" alt="asteroid">
                                 <div class="card-body">
                                   <h5 class="card-title">Asteroid</h5>
@@ -263,9 +270,9 @@
     
                         </div>
                         
-                        <div class="col-4 col-md-4 col-lg-4">
+                        <div class="col-12 col-md-6 col-lg-4 col-md-6 mt-md-5 mt-sm-5 mt-5">
 
-                            <div class="card" style="width: 18rem;">
+                            <div class="card">
                                
                                 <img class="card-img-top img-fluid" alt="comet" src="assets/comet.jpg">
                                 <div class="card-body">
@@ -278,9 +285,9 @@
                             
                         </div>
     
-                        <div class="col-4 col-md-4 col-lg-4">
+                        <div class="col-12 col-lg-4  col-md-6 mt-md-5 mt-sm-5 mt-5">
 
-                            <div class="card" style="width: 18rem;">
+                            <div class="card">
                                
                                 <img class="card-img-top img-fluid" alt="meteor" src="assets/meteor.jpg">
                                
@@ -308,32 +315,32 @@
                        <div class="col-sm-3 col-md-4 list-item-footer">
                            <h3>Solar System</h3>
                            <ul class="footer-lists">
-                               <li class="nav-item"><a href="#">Our Solar System</a></li>
-                               <li><a href="#">Sun</a></li>
-                               <li><a href="#">Kuiper Belt</a></li>
-                               <li><a href="#">Oort Cloud</a></li>
-                               <li><a href="#">Beyond Our Solar System</a></li>
+                               <li><a>Our Solar System</a></li>
+                               <li><a >Sun</a></li>
+                               <li><a >Kuiper Belt</a></li>
+                               <li><a >Oort Cloud</a></li>
+                               <li><a >Beyond Our Solar System</a></li>
                            </ul>
                        </div>
-                       <div class="col-sm-6 col-md-4 list-item-footer">
+                       <div class="col-sm-3 col-md-4 list-item-footer">
                            <h3>Moons</h3>
                            <ul class="footer-lists">    
-                                <li><a href="#">Earth(1)</a></li>                        
-                               <li><a href="#">Mars(2)</a></li>
-                               <li><a href="#">Jupiter(79)</a></li>
-                               <li><a href="#">Saturn(82)</a></li>
-                               <li><a href="#">Uranus(27)</a></li>
-                               <li><a href="#">Neptune(14)</a></li>
-                               <li><a href="#">Pluto(5)</a></li>
+                                <li><a>Earth(1)</a></li>                        
+                               <li><a>Mars(2)</a></li>
+                               <li><a>Jupiter(79)</a></li>
+                               <li><a>Saturn(82)</a></li>
+                               <li><a>Uranus(27)</a></li>
+                               <li><a>Neptune(14)</a></li>
+                             
                            </ul>
                        </div>
-                       <div class="col-12 col-md-4 item list-item-footer">
-                           <h3>Social Media Sites</h3>
+                       <div class="col-5 col-md-4 item list-item-footer">
+                           <h3>Follow Us</h3>
                            <div class="col item social">
-                               <a href="#"><i class="icon ion-social-facebook"></i></a>
-                               <a href="#"><i class="icon ion-social-twitter"></i></a>
-                               <a href="#"><i class="icon ion-social-snapchat"></i></a>
-                               <a href="#"><i class="icon ion-social-instagram"></i></a>
+                               <a><i class="icon ion-social-facebook"></i></a>
+                               <a><i class="icon ion-social-twitter"></i></a>
+                               <a><i class="icon ion-social-snapchat"></i></a>
+                               <a><i class="icon ion-social-instagram"></i></a>
                            </div>
                        </div>
 
@@ -358,7 +365,7 @@
                <div class="row created-by">
                    
                    <div class="col d-flex justify-content-center align-items-center">
-                       <p>Harold Nocos| Micheal Pelagio | Ivan Christian Jay Funcion </p>
+                       <p>Designed and Developed By: Harold Nocos| Micheal Pelagio | Ivan Christian Jay Funcion </p>
                    </div>
                </div>
            </div>
@@ -389,6 +396,22 @@
                 
             });
         });
+
+
+        const  scrollFunction =  () => {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                document.getElementById("nav").classList.add("bg-nav");
+                document.getElementById("nav").classList.add("navbar-shadow");
+            }else {
+                document.getElementById("nav").classList.remove("bg-nav");
+                document.getElementById("nav").classList.remove("navbar-shadow");
+            }
+        }
+
+        window.onscroll = function() {
+            scrollFunction();
+
+        };
     </script>
   </body>
 </html>

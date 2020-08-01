@@ -370,41 +370,42 @@
                    
                </div>
 
-               <div class="footer-link-container">
-                   <div class="row">
-                       <div class="col-sm-3 col-md-4 list-item-footer">
-                           <h3>Solar System</h3>
-                           <ul class="footer-lists">
-                               <li class="nav-item"><a href="#">Our Solar System</a></li>
-                               <li><a href="#">Sun</a></li>
-                               <li><a href="#">Kuiper Belt</a></li>
-                               <li><a href="#">Oort Cloud</a></li>
-                               <li><a href="#">Beyond Our Solar System</a></li>
-                           </ul>
-                       </div>
-                       <div class="col-sm-6 col-md-4 list-item-footer">
-                           <h3>Moons</h3>
-                           <ul class="footer-lists">    
-                            <li><a href="#">Earth(1)</a></li>                        
-                           <li><a href="#">Mars(2)</a></li>
-                           <li><a href="#">Jupiter(79)</a></li>
-                           <li><a href="#">Saturn(82)</a></li>
-                           <li><a href="#">Uranus(27)</a></li>
-                           <li><a href="#">Neptune(14)</a></li>
-                           <li><a href="#">Pluto(5)</a></li>
-                          </ul>
-                       </div>
-                       <div class="col-12 col-md-4 item list-item-footer">
-                           <h3>Social Media Sites</h3>
-                           <div class="col item social">
-                               <a href="#"><i class="icon ion-social-facebook"></i></a>
-                               <a href="#"><i class="icon ion-social-twitter"></i></a>
-                               <a href="#"><i class="icon ion-social-snapchat"></i></a>
-                               <a href="#"><i class="icon ion-social-instagram"></i></a>
-                           </div>
-                       </div>
 
-                   </div>
+               <div class="footer-link-container">
+                <div class="row">
+                    <div class="col-sm-3 col-md-4 list-item-footer">
+                        <h3>Solar System</h3>
+                        <ul class="footer-lists">
+                            <li><a>Our Solar System</a></li>
+                            <li><a >Sun</a></li>
+                            <li><a >Kuiper Belt</a></li>
+                            <li><a >Oort Cloud</a></li>
+                            <li><a >Beyond Our Solar System</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-md-4 list-item-footer">
+                        <h3>Moons</h3>
+                        <ul class="footer-lists">    
+                             <li><a>Earth(1)</a></li>                        
+                            <li><a>Mars(2)</a></li>
+                            <li><a>Jupiter(79)</a></li>
+                            <li><a>Saturn(82)</a></li>
+                            <li><a>Uranus(27)</a></li>
+                            <li><a>Neptune(14)</a></li>
+                          
+                        </ul>
+                    </div>
+                    <div class="col-5 col-md-4 item list-item-footer">
+                        <h3>Follow Us</h3>
+                        <div class="col item social">
+                            <a><i class="icon ion-social-facebook"></i></a>
+                            <a><i class="icon ion-social-twitter"></i></a>
+                            <a><i class="icon ion-social-snapchat"></i></a>
+                            <a><i class="icon ion-social-instagram"></i></a>
+                        </div>
+                    </div>
+
+                </div>
                </div>
               
                <div class="row back-top-container">
@@ -425,7 +426,7 @@
                <div class="row created-by">
                    
                    <div class="col d-flex justify-content-center align-items-center">
-                       <p>Harold Nocos| Micheal Pelagio | Ivan Christian Jay Funcion </p>
+                    <p>Designed and Developed By: Harold Nocos | Micheal Pelagio | Ivan Christian Jay Funcion </p>
                    </div>
                </div>
            </div>
@@ -440,32 +441,6 @@
 
 
     <script src="slick/slick/slick.min.js"></script>
-    <script>
-        $('.multiple-items').slick({
-            infinite: true,
-            slidesToShow: 2,
-            slidesToScroll: 2
-        });
-
-
-
-        const  scrollFunction =  () => {
-            if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
-                document.getElementById("nav").classList.add("bg-nav");
-                document.getElementById("nav").classList.add("navbar-shadow");
-            }else {
-                document.getElementById("nav").classList.remove("bg-nav");
-                document.getElementById("nav").classList.remove("navbar-shadow");
-            }
-        }
-
-        window.onscroll = function() {
-            scrollFunction();
-      
-        };
-
-
-  
-    </script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
