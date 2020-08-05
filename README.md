@@ -43,4 +43,6 @@ Solar System View uses a number of technology to work properly:
 
 ## Screenshots
 
-<img src="screenshots/sh1.PNG" width="730px" height="430px">
+<img src="screenshots/sh1.PNG" width="430px" height="">
+<img src="screenshots/sh2.PNG" width="430px" height="">
+<img src="screenshots/sh3.gif" width="430px" height="">
