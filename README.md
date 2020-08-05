@@ -40,3 +40,7 @@ Solar System View uses a number of technology to work properly:
 * Ivan Christian Jay E. Funcion
 * Harold Nocos
 * Micheal Pelagio
+
+## Screenshots
+
+<img src="sh1.png" width="730px" height="430px">
