@@ -18,5 +18,5 @@ const  scrollFunction =  () => {
 
 window.onscroll = function() {
     scrollFunction();
-
+    console.log(document.body.scrollTop);
 };
